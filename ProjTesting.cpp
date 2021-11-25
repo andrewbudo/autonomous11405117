@@ -3,6 +3,7 @@
 #include <iomanip>
 
 #include "BritishNationalGrid.h"
+#include "MercatorVariantD.h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -42,6 +43,6 @@ int main()
     std::cout << "Our Proj Tests" << std::endl;
     std::cout << "-----------------------------------------" << std::endl;
     BritishNationalGrid();
-
+    MercatorVariantD();
     return 0;
 }
