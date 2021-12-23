@@ -130,15 +130,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BritishNationalGrid.cpp" />
+    <ClCompile Include="Krovak.cpp" />
     <ClCompile Include="KrovakModifiedNorthOrientated.cpp" />
     <ClCompile Include="EquidistantCylindrical.cpp" />
+    <ClCompile Include="LambertConicConformal_1SPvariantB.cpp" />
     <ClCompile Include="MercatorVariantD.cpp" />
     <ClCompile Include="ProjTesting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BritishNationalGrid.h" />
+    <ClInclude Include="Krovak.h" />
     <ClInclude Include="KrovakModifiedNorthOrientated.h" />
     <ClInclude Include="EquidistantCylindrical.h" />
+    <ClInclude Include="LambertConicConformal_1SPvariantB.h" />
     <ClInclude Include="MercatorVariantD.h" />
     <ClInclude Include="ProjTesting.h" />
   </ItemGroup>
