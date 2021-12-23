@@ -134,6 +134,7 @@
     <ClCompile Include="KrovakModifiedNorthOrientated.cpp" />
     <ClCompile Include="EquidistantCylindrical.cpp" />
     <ClCompile Include="LambertConicConformal_1SPvariantB.cpp" />
+    <ClCompile Include="LambertConicNearConformal.cpp" />
     <ClCompile Include="Amersfoort.cpp" />
     <ClCompile Include="MercatorVariantB.cpp" />
     <ClCompile Include="LambertConicConformal(2SP).cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="KrovakModifiedNorthOrientated.h" />
     <ClInclude Include="EquidistantCylindrical.h" />
     <ClInclude Include="LambertConicConformal_1SPvariantB.h" />
+    <ClInclude Include="LambertConicNearConformal.h" />
     <ClInclude Include="Amersfoort.h" />
     <ClInclude Include="MercatorVariantB.h" />
     <ClInclude Include="LambertConicConformal(2SP).h" />

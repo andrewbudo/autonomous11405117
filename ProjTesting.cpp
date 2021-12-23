@@ -11,8 +11,8 @@
 #include "EquidistantCylindrical.h"
 #include "LambertConicConformal_1SPvariantB.h"
 #include "Krovak.h"
+#include "LambertConicNearConformal.h"
 #include "LambertConicConformal(2SP).h"
-
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -71,6 +71,7 @@ int main()
 	EquidistantCylindrical();
 	LambertConicConformal_1SPvariantB();
 	Krovak();
+	LambertConicNearConformal();
 	  KrovakModifiedNorthOrientated();
   	EquidistantCylindrical();
 	  LambertConicConformal2SPAksenova();
