@@ -3,8 +3,11 @@
 #include <iomanip>
 
 #include "BritishNationalGrid.h"
+
 #include "MercatorVariantB.h"
 #include "Amersfoort.h"
+#include "MercatorVariantD.h"
+#include "LambertConicConformal(2SP).h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -57,6 +60,9 @@ int main()
     std::cout << "-----------------------------------------" << std::endl;
     BritishNationalGrid();
     MercatorVariantB();
-	Amersfoort();
+ 	  Amersfoort();
+    MercatorVariantD();
+	  LambertConicConformal2SPAksenova();
+
     return 0;
 }

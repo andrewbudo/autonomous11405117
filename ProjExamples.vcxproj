@@ -132,12 +132,16 @@
     <ClCompile Include="BritishNationalGrid.cpp" />
     <ClCompile Include="Amersfoort.cpp" />
     <ClCompile Include="MercatorVariantB.cpp" />
+    <ClCompile Include="LambertConicConformal(2SP).cpp" />
+    <ClCompile Include="MercatorVariantD.cpp" />
     <ClCompile Include="ProjTesting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BritishNationalGrid.h" />
     <ClInclude Include="Amersfoort.h" />
     <ClInclude Include="MercatorVariantB.h" />
+    <ClInclude Include="LambertConicConformal(2SP).h" />
+    <ClInclude Include="MercatorVariantD.h" />
     <ClInclude Include="ProjTesting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
