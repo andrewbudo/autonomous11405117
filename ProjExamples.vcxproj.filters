@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ProjTesting.cpp" />
+    <ClCompile Include="Amersfoort.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="BritishNationalGrid.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="Cassini.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="EquidistantCylindrical.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="Krovak.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="KrovakModifiedNorthOrientated.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="LambertConicConformal(2SP).cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="LambertConicConformal_1SPvariantB.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="LambertConicNearConformal.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="MercatorVariantB.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+    <ClCompile Include="MercatorVariantD.cpp">
+      <Filter>Projections</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProjTesting.h" />
+    <ClInclude Include="Amersfoort.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="BritishNationalGrid.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="Cassini.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="EquidistantCylindrical.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="Krovak.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="KrovakModifiedNorthOrientated.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertConicConformal(2SP).h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertConicConformal_1SPvariantB.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertConicNearConformal.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="MercatorVariantB.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+    <ClInclude Include="MercatorVariantD.h">
+      <Filter>Projections</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Projections">
+      <UniqueIdentifier>{cd261172-2cd7-4520-9aee-54cba4fbca20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
