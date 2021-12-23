@@ -3,12 +3,16 @@
 #include <iomanip>
 
 #include "BritishNationalGrid.h"
+
+#include "MercatorVariantB.h"
+#include "Amersfoort.h"
 #include "MercatorVariantD.h"
 #include "KrovakModifiedNorthOrientated.h"
 #include "EquidistantCylindrical.h"
 #include "LambertConicConformal_1SPvariantB.h"
 #include "Krovak.h"
 #include "LambertConicNearConformal.h"
+#include "LambertConicConformal(2SP).h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -19,9 +23,21 @@ bool CalcProj(
     double& out_second
 )
 {
+	/*
+	PJ *proj_create_conversion_lambert_conic_conformal_2sp_michigan(
+    PJ_CONTEXT *ctx, double latitude_false_origin,
+    double longitude_false_origin, double latitude_first_parallel,
+    double latitude_second_parallel, double easting_false_origin,
+    double northing_false_origin, double ellipsoid_scaling_factor,
+    const char *ang_unit_name, double ang_unit_conv_factor,
+    const char *linear_unit_name, double linear_unit_conv_factor)
+	*/
+
+
     PJ* P;
     PJ_COORD c, c_out;
 
+	
     P = proj_create_crs_to_crs(PJ_DEFAULT_CTX, src, trg, NULL);
 
     if (P == 0)
@@ -48,11 +64,16 @@ int main()
     std::cout << "Our Proj Tests" << std::endl;
     std::cout << "-----------------------------------------" << std::endl;
     BritishNationalGrid();
+    MercatorVariantB();
+ 	  Amersfoort();
     MercatorVariantD();
 	KrovakModifiedNorthOrientated();
 	EquidistantCylindrical();
 	LambertConicConformal_1SPvariantB();
 	Krovak();
 	LambertConicNearConformal();
+	  KrovakModifiedNorthOrientated();
+  	EquidistantCylindrical();
+	  LambertConicConformal2SPAksenova();
     return 0;
 }
