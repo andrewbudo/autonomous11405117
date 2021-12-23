@@ -5,8 +5,10 @@
 
 void MercatorVariantB()
 {
-	std::cout << "Example 16" << std::endl;
-    std::cout << "Projected Coordinate Reference System OSGB 1936 / MercatorVariantB" << std::endl;
+    // p.45
+    std::cout << "Example 16" << std::endl;
+    std::cout << "For Projected Coordinate Reference System: Pulkovo 1942 / Caspian Sea Mercator / MercatorVariantB" << std::endl;
+	
     double lat = 53;
     double lon = 53;
     std::cout << std::fixed << "lat = " << lat << "; lon = " << lon << "\n";
