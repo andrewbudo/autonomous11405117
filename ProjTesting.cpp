@@ -5,7 +5,7 @@
 #include "BritishNationalGrid.h"
 #include "MercatorVariantD.h"
 #include "KrovakModifiedNorthOrientated.h"
-#include "LambertConicConformal2SPBelgium.h"
+#include "EquidistantCylindrical.h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -47,6 +47,6 @@ int main()
     BritishNationalGrid();
     MercatorVariantD();
 	KrovakModifiedNorthOrientated();
-	LambertConicConformal2SPBelgium();
+	EquidistantCylindrical();
     return 0;
 }
