@@ -132,6 +132,8 @@
     <ClCompile Include="BritishNationalGrid.cpp" />
     <ClCompile Include="KrovakModifiedNorthOrientated.cpp" />
     <ClCompile Include="EquidistantCylindrical.cpp" />
+    <ClCompile Include="Amersfoort.cpp" />
+    <ClCompile Include="MercatorVariantB.cpp" />
     <ClCompile Include="LambertConicConformal(2SP).cpp" />
     <ClCompile Include="MercatorVariantD.cpp" />
     <ClCompile Include="ProjTesting.cpp" />
@@ -140,6 +142,8 @@
     <ClInclude Include="BritishNationalGrid.h" />
     <ClInclude Include="KrovakModifiedNorthOrientated.h" />
     <ClInclude Include="EquidistantCylindrical.h" />
+    <ClInclude Include="Amersfoort.h" />
+    <ClInclude Include="MercatorVariantB.h" />
     <ClInclude Include="LambertConicConformal(2SP).h" />
     <ClInclude Include="MercatorVariantD.h" />
     <ClInclude Include="ProjTesting.h" />
