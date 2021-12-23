@@ -6,6 +6,7 @@
 #include "MercatorVariantD.h"
 #include "KrovakModifiedNorthOrientated.h"
 #include "EquidistantCylindrical.h"
+#include "LambertConicConformal(2SP).h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -48,5 +49,6 @@ int main()
     MercatorVariantD();
 	KrovakModifiedNorthOrientated();
 	EquidistantCylindrical();
+	LambertConicConformal2SPAksenova();
     return 0;
 }
