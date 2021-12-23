@@ -7,6 +7,8 @@
 #include "MercatorVariantB.h"
 #include "Amersfoort.h"
 #include "MercatorVariantD.h"
+#include "KrovakModifiedNorthOrientated.h"
+#include "EquidistantCylindrical.h"
 #include "LambertConicConformal(2SP).h"
 
 bool CalcProj(
@@ -62,7 +64,8 @@ int main()
     MercatorVariantB();
  	  Amersfoort();
     MercatorVariantD();
+	  KrovakModifiedNorthOrientated();
+  	EquidistantCylindrical();
 	  LambertConicConformal2SPAksenova();
-
     return 0;
 }
