@@ -63,17 +63,17 @@ int main()
 {
     std::cout << "Our Proj Tests" << std::endl;
     std::cout << "-----------------------------------------" << std::endl;
-    BritishNationalGrid();
-    MercatorVariantB();
- 	  Amersfoort();
-    MercatorVariantD();
-	KrovakModifiedNorthOrientated();
-	EquidistantCylindrical();
-	LambertConicConformal_1SPvariantB();
-	Krovak();
-	LambertConicNearConformal();
-	  KrovakModifiedNorthOrientated();
-  	EquidistantCylindrical();
-	  LambertConicConformal2SPAksenova();
+  
+    BritishNationalGrid();               // Пример 1
+    MercatorVariantD();                  // Пример 2
+    LambertConicConformal2SPAksenova();  // Аксёнова ++
+    LambertConicConformal_1SPvariantB(); // Вахнер --
+    EquidistantCylindrical();            // Гапон -+
+    Amersfoort();                        // Гончарова ++
+    LambertConicNearConformal();         // Гриб ++
+    Krovak();                            // Колосёнок ++
+    KrovakModifiedNorthOrientated();     // Лазаревич ++
+    MercatorVariantB();                  // Поправко ++
+
     return 0;
 }
