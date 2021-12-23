@@ -5,6 +5,7 @@
 
 void Amersfoort()
 {
+	// c.77
 	std::cout << "Example 7" << std::endl;
 	std::cout << "Projected Coordinate Reference System OSGB 1936 / Amersfoort" << std::endl;
 	double lat = 53;
