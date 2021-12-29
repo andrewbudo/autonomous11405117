@@ -157,7 +157,9 @@
     <ClInclude Include="MercatorVariantB.h" />
     <ClInclude Include="LambertConicConformal(2SP).h" />
     <ClInclude Include="MercatorVariantD.h" />
+    <ClInclude Include="LambertConicConformalSouthernHemisphere" />
     <ClInclude Include="ProjTesting.h" />
+    
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
