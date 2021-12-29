@@ -143,6 +143,7 @@
     <ClCompile Include="MercatorVariantB.cpp" />
     <ClCompile Include="LambertConicConformal(2SP).cpp" />
     <ClCompile Include="MercatorVariantD.cpp" />
+    <ClInclude Include="LambertConicConformalSouthernHemisphere" />
     <ClCompile Include="ProjTesting.cpp" />
   </ItemGroup>
   <ItemGroup>
