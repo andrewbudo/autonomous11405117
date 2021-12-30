@@ -1,0 +1,36 @@
+Oblique and Equatorial Stereographic
+
+
+
+#include <iostream>
+#include <proj.h>
+#include <iomanip>
+
+int main()
+{
+    std::cout << "Our Proj Tests" << std::endl;
+    PJ* P;
+    PJ_COORD c, c_out;
+
+    P = proj_create_crs_to_crs(
+        PJ_DEFAULT_CTX,
+        "+proj=longlat +a=6377397.155 +rf=299.15281 +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +ellps=bessel +no_defs",
+		"+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs",
+        NULL);
+    if (P == 0)
+        return 1;
+
+    double lat = 53.0;
+    double lon = 6.0;
+
+    c.lpzt.phi = lat;
+    c.lpzt.lam = lon;
+    c.lpzt.z = 0.0;
+    c.lpzt.t = HUGE_VAL;
+
+    c_out = proj_trans(P, PJ_FWD, c);
+
+    std::cout << std::setprecision(18) << std::fixed << "N = " << c_out.xy.y << "; E = " << c_out.xy.x << "\n";						     
+    proj_destroy(P);
+    return 0;
+}
