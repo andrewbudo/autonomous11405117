@@ -14,6 +14,7 @@
 #include "LambertConicNearConformal.h"
 #include "LambertConicConformal(2SP).h"
 #include "Cassini.h"
+#include "LambertConicConformalSouthernHemisphere.h"
 
 bool CalcProj(
     const char* src, //"EPSG:4326"
@@ -76,6 +77,6 @@ int main()
     Krovak();                            // Колосёнок ++
     KrovakModifiedNorthOrientated();     // Лазаревич ++
     MercatorVariantB();                  // Поправко ++
-
+    LambertConicConformalSouthernHemisphere(); // Барановский ++
     return 0;
 }
